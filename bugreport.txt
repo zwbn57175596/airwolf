@@ -1,0 +1,96 @@
+date/time         : 2013-06-21, 15:41:47, 984ms
+computer name     : ZHAOWEI
+user name         : Administrator <admin>
+registered owner  : ailk
+operating system  : Windows XP Service Pack 3 build 2600
+system language   : Chinese
+system up time    : 21 hours 33 minutes
+program up time   : 11 seconds
+processors        : 4x Intel(R) Core(TM) i5 CPU M 520 @ 2.40GHz
+physical memory   : 1981/3510 MB (free/total)
+free disk space   : (C:) 18.52 GB
+display mode      : 1280x800, 32 bit
+process id        : $17f4
+allocated memory  : 21.35 MB
+executable        : heidisql.exe
+exec. date/time   : 2013-04-26 11:45
+version           : 7.0.0.4390
+compiled with     : Delphi XE
+madExcept version : 3.0m beta 1
+callstack crc     : $8f80b6a6, $312836e8, $312836e8
+exception number  : 1
+exception class   : EConvertError
+exception message : Format '%s' invalid or incompatible with argument.
+
+main thread ($390):
+004737e5 heidisql.exe SysUtils               ConvertErrorFmt
+00475d16 heidisql.exe SysUtils               FormatError
+004763b1 heidisql.exe SysUtils               WideFormatError
+00476603 heidisql.exe SysUtils               WideFormatBuf.@label
+004764e9 heidisql.exe SysUtils               WideFormatBuf
+00476144 heidisql.exe SysUtils               FormatBuf
+004762d0 heidisql.exe SysUtils               FmtStr
+0047624a heidisql.exe SysUtils               Format
+0047622f heidisql.exe SysUtils               Format
+006849f5 heidisql.exe helpers      2680   +2 f_
+00725baa heidisql.exe dbconnection 2013  +14 TMySQLConnection.GetLastError
+007202f6 heidisql.exe dbconnection 1140 +104 TMySQLConnection.SetActive
+007ec463 heidisql.exe Main         3108   +8 TMainForm.InitConnection
+0078a76e heidisql.exe connections   292   +5 Tconnform.btnOpenClick
+004e9707 heidisql.exe Controls               TControl.Click
+005202f6 heidisql.exe StdCtrls               TCustomButton.Click
+00520de4 heidisql.exe StdCtrls               TCustomButton.CNCommand
+004e919c heidisql.exe Controls               TControl.WndProc
+004eda60 heidisql.exe Controls               TWinControl.WndProc
+0051ffc0 heidisql.exe StdCtrls               TButtonControl.WndProc
+004e8dc0 heidisql.exe Controls               TControl.Perform
+004edbb3 heidisql.exe Controls               DoControlMsg
+004ee60f heidisql.exe Controls               TWinControl.WMCommand
+00570128 heidisql.exe Forms                  TCustomForm.WMCommand
+004e919c heidisql.exe Controls               TControl.WndProc
+004eda60 heidisql.exe Controls               TWinControl.WndProc
+0056d02c heidisql.exe Forms                  TCustomForm.WndProc
+004ed100 heidisql.exe Controls               TWinControl.MainWndProc
+004ab958 heidisql.exe Classes                StdWndProc
+77d2a034 USER32.dll                          CallWindowProcW
+0067feb8 heidisql.exe helpers      1146   +1 CallOld
+00680000 heidisql.exe helpers      1193  +44 SizeGripWndProc
+77d292de USER32.dll                          SendMessageW
+77d2a034 USER32.dll                          CallWindowProcW
+004edb60 heidisql.exe Controls               TWinControl.DefaultHandler
+004e9b58 heidisql.exe Controls               TControl.WMLButtonUp
+004e919c heidisql.exe Controls               TControl.WndProc
+004eda60 heidisql.exe Controls               TWinControl.WndProc
+0051ffc0 heidisql.exe StdCtrls               TButtonControl.WndProc
+004ed100 heidisql.exe Controls               TWinControl.MainWndProc
+004ab958 heidisql.exe Classes                StdWndProc
+77d18a0b USER32.dll                          DispatchMessageW
+00575ffb heidisql.exe Forms                  TApplication.ProcessMessage
+0057603e heidisql.exe Forms                  TApplication.HandleMessage
+0057199d heidisql.exe Forms                  TCustomForm.ShowModal
+007e620e heidisql.exe Main         1787  +11 TMainForm.actDisconnectExecute
+004ab2b3 heidisql.exe Classes                TBasicAction.Execute
+004d7989 heidisql.exe ActnList               TContainedAction.Execute
+004d8744 heidisql.exe ActnList               TCustomAction.Execute
+004ab177 heidisql.exe Classes                TBasicActionLink.Execute
+004e96f0 heidisql.exe Controls               TControl.Click
+0054a810 heidisql.exe ComCtrls               TToolButton.Click
+004e9bad heidisql.exe Controls               TControl.WMLButtonUp
+004e919c heidisql.exe Controls               TControl.WndProc
+004eda60 heidisql.exe Controls               TWinControl.WndProc
+0056d02c heidisql.exe Forms                  TCustomForm.WndProc
+004e8dc0 heidisql.exe Controls               TControl.Perform
+004ed1f8 heidisql.exe Controls               GetControlAtPos
+004ed2c2 heidisql.exe Controls               TWinControl.ControlAtPos
+004e8dc0 heidisql.exe Controls               TControl.Perform
+004ed38c heidisql.exe Controls               TWinControl.IsControlMouseMsg
+004ed8dc heidisql.exe Controls               TWinControl.WndProc
+0054f260 heidisql.exe ComCtrls               TToolBar.WndProc
+004ed100 heidisql.exe Controls               TWinControl.MainWndProc
+004ab958 heidisql.exe Classes                StdWndProc
+77d18a0b USER32.dll                          DispatchMessageW
+00575ffb heidisql.exe Forms                  TApplication.ProcessMessage
+0057603e heidisql.exe Forms                  TApplication.HandleMessage
+00576369 heidisql.exe Forms                  TApplication.Run
+00818be2 heidisql.exe heidisql       74  +22 initialization
+
