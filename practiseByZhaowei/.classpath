@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="lib/appBi.jar"/>
+	<classpathentry kind="lib" path="lib/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-bean-collections.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-core.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-testframework-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-configuration-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-digester-1.8.jar"/>
+	<classpathentry kind="lib" path="lib/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-validator.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/jcommon-1.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/jdbc2_0-stdext.jar"/>
+	<classpathentry kind="lib" path="lib/json-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/json-lib-2.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.7-bin.jar"/>
+	<classpathentry kind="lib" path="lib/ncr.jar"/>
+	<classpathentry kind="lib" path="lib/ncrdbdq.jar"/>
+	<classpathentry kind="lib" path="lib/ncrjar.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
