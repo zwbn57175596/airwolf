@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+
+
+
+<beans>
+
+	<bean id="jmsConnectionFactory"
+		class="org.springframework.jndi.JndiObjectFactoryBean">
+
+		<property name="jndiName">
+
+			<value>java:comp/env/jms/factory</value>
+
+		</property>
+
+	</bean>
+	
+
+
+
+	<bean id="destination"
+		class="org.springframework.jndi.JndiObjectFactoryBean">
+
+		<property name="jndiName">
+
+			<value>java:comp/env/jms/queue</value>
+
+		</property>
+
+	</bean>
+
+
+
+	<!--  Spring JmsTemplate config -->
+
+	<bean id="jmsTemplate"
+		class="org.springframework.jms.core.JmsTemplate">
+
+		<property name="connectionFactory">
+
+			<bean
+				class="org.springframework.jms.connection.SingleConnectionFactory">
+
+				<property name="targetConnectionFactory"
+					ref="jmsConnectionFactory" />
+
+			</bean>
+
+		</property>
+
+	</bean>
+
+
+
+	<!-- POJO which send Message uses Spring JmsTemplate --><!--配置消息生产者-->
+
+	<bean id="messageProducer"
+		class="com.zz.test.jms.activemq.MessageProducer">
+
+		<property name="template" ref="jmsTemplate" />
+
+		<property name="destination" ref="destination" />
+
+	</bean>
+
+
+
+	<!--  Message Driven POJO (MDP) -->
+
+	<bean id="messageListener"
+		class=" com.zz.test.jms.activemq.MessageConsumer" />
+
+
+
+	<!--  listener container，MDP无需实现接口 -->
+
+	<bean id="listenerContainer"
+		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+
+		<property name="connectionFactory" ref="jmsConnectionFactory" />
+
+		<property name="destination" ref="destination" />
+
+		<property name="messageListener" ref="messageListener" />
+
+	</bean>
+
+</beans>
