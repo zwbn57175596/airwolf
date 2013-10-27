@@ -81,7 +81,6 @@ public class RSSReader extends Activity implements OnItemClickListener
     public boolean onCreateOptionsMenu(Menu menu) 
     {
     	super.onCreateOptionsMenu(menu);
-    	
     	menu.add(0,0,"Choose RSS Feed");
     	menu.add(0,1,"Refresh");
     	Log.i(tag,"onCreateOptionsMenu");
