@@ -5,6 +5,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<script type="text/javascript">
+	localStorage.lastname = "zhao";
+	
+	if (localStorage.pageCount) {
+		localStorage.pageCount = Number(localStorage.pageCount) + 1;
+	} else {
+		localStorage.pageCount = 1;
+	}
+	
+	document.write(localStorage.lastname + "<br/>" + localStorage.pageCount);
+</script>
 </body>
 </html>

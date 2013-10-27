@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		if (sessionStorage.pageCount) {
+			sessionStorage.pageCount = Number(sessionStorage.pageCount) + 1;
+		} else {
+			sessionStorage.pageCount = 1;
+		}
+		
+		document.write("Visits " + sessionStorage.pageCount + " time(s) this session.");
+	</script>
+</body>
+</html>
