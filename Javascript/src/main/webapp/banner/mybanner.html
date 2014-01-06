@@ -1,0 +1,90 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>滑动轮播动画</title>
+    <link href="../jQuery/jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="../jQuery/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <link href="../jQuery/jquery-ui-1.10.3.custom/development-bundle/demos/demos.css" rel="stylesheet" type="text/css">
+	<style>
+		.main { width: 500px; height: 200px; }
+		.toggler {position: relative; width: 100%; height:100%; }
+		.toggler .ui-widget-content {display: none;}
+		#button { padding: .5em 1em; text-decoration: none; position:relative; }
+		#effect { width: 500px; height: 200px; padding: 0.4em; position: relative; }
+		#effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+		.ui-effects-transfer { border: 2px dotted gray; }
+		.imgnum span{font:normal normal bold 12px/15px 微软雅黑;  margin-left:5px; padding:3px 6px 3px 6px;   cursor:pointer;}
+        .imgnum span.onselect{background-color:#F00;}
+        .imgnum{text-align:center; float:right; margin:-25px 30px; position:relative;}
+	</style>
+	<script>
+	$(function() {
+		// run the currently selected effect
+		function runEffect(index) {
+			// get effect type from
+			var selectedEffect = $( "#effectTypes" ).val();
+
+			// most effect types need no options passed by default
+			var options = {};
+			// some effects have required parameters
+			if ( selectedEffect === "scale" ) {
+				options = { percent: 0 };
+			} else if ( selectedEffect === "transfer" ) {
+				options = { to: "#button", className: "ui-effects-transfer" };
+			} else if ( selectedEffect === "size" ) {
+				options = { to: { width: 200, height: 60 } };
+			}
+
+			// run the effect
+			$( ".toggler .ui-widget-content:eq(" + index + ")" ).effect( "fade", options, 500, callback );
+		};
+
+		// callback function to bring a hidden box back
+		function callback() {
+			//setTimeout(function() {
+			//	$( "#effect" ).removeAttr( "style" ).hide().fadeIn();
+			//}, 1000 );
+		};
+
+		// set effect from select menu value
+		$( ".imgnum span" ).click(function() {
+			console.log($(this).parent().index());
+			runEffect($(this).parent().index());
+			return false;
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="main">
+<div class="toggler">
+    <div class="ui-widget-content ui-corner-all">
+        <img src="../images/banner001.jpg" />
+    </div>
+    <div class="ui-widget-content ui-corner-all">
+        <img src="../images/banner002.jpg" />
+    </div>
+    <div class="ui-widget-content ui-corner-all">
+        <img src="../images/banner003.jpg" />
+    </div>
+    <div class="ui-widget-content ui-corner-all">
+        <img src="../images/banner004.jpg" />
+    </div>
+    <div class="ui-widget-content ui-corner-all">
+        <img src="../images/banner005.jpg" />
+    </div>
+</div>
+<div class="imgnum">
+    <span class="onselect">1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+	<span>5</span>
+</div>
+</div>
+<br/>
+<a href="#" id="button" class="ui-widget-content ui-corner-all">Run Effect</a>
+
+
+</body>
+</html>
