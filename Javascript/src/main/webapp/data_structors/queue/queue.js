@@ -50,7 +50,7 @@ define(function() {
   
   // 返回队列是否为空
   Queue.fn.isEmpty = function() {
-    return !!(this.aElement == 0);
+    return !!(this.aElement.length == 0);
   };
   return Queue;
 });
