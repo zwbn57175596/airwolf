@@ -4,6 +4,7 @@ package chap04;
 // demonstrates stacks
 // to run this program: C>java StackApp
 ////////////////////////////////////////////////////////////////
+@SuppressWarnings("ALL")
 class StackX {
   private int maxSize;        // size of stack array
   private long[] stackArray;
