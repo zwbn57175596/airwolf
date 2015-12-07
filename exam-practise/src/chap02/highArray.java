@@ -1,4 +1,4 @@
-package chap2;
+package chap02;
 
 // highArray.java
 // demonstrates array class with high-level interface
