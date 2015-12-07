@@ -16,6 +16,7 @@ package chap05;
 //      { System.out.print(dData + " "); }
 //   }  // end class Link
 ////////////////////////////////////////////////////////////////
+@SuppressWarnings("ALL")
 class SortedList {
   private Link first;                 // ref to first item
 
