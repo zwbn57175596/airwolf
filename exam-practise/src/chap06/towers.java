@@ -5,7 +5,7 @@ package chap06;
 // to run this program: C>java TowersApp
 ////////////////////////////////////////////////////////////////
 class TowersApp {
-  static int nDisks = 3;
+  static int nDisks = 7;
 
   public static void main(String[] args) {
     doTowers(nDisks, 'A', 'B', 'C');
