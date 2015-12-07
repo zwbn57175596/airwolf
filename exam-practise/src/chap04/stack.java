@@ -5,13 +5,13 @@ package chap04;
 // to run this program: C>java StackApp
 ////////////////////////////////////////////////////////////////
 @SuppressWarnings("ALL")
-class StackX {
+class Stacklong {
   private int maxSize;        // size of stack array
   private long[] stackArray;
   private int top;            // top of stack
 
   //--------------------------------------------------------------
-  public StackX(int s)         // constructor
+  public Stacklong(int s)         // constructor
   {
     maxSize = s;             // set array size
     stackArray = new long[maxSize];  // create array
@@ -53,7 +53,7 @@ class StackX {
 ////////////////////////////////////////////////////////////////
 class StackApp {
   public static void main(String[] args) {
-    StackX theStack = new StackX(10);  // make new stack
+    Stacklong theStack = new Stacklong(10);  // make new stack
     theStack.push(20);               // push items onto stack
     theStack.push(40);
     theStack.push(60);
