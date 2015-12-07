@@ -4,7 +4,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * TimerTest01
+ * TimerTest01 定时器
  * Created by zhaowei on 11/23/15.
  */
 public class TimerTest01 {
