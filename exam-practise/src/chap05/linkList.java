@@ -46,6 +46,18 @@ class LinkList {
   }
 
   // -------------------------------------------------------------
+  public Link getFirst()         // get value of first
+  {
+    return first;
+  }
+
+  // -------------------------------------------------------------
+  public void setFirst(Link f)   // set first to new link
+  {
+    first = f;
+  }
+
+  // -------------------------------------------------------------
   // insert at start of list
   public void insertFirst(int id, double dd) {                           // make new link
     Link newLink = new Link(id, dd);
@@ -72,6 +84,12 @@ class LinkList {
     }
     System.out.println("");
   }
+  // -------------------------------------------------------------
+
+  public ListIterator getIterator()  // return iterator
+  {
+    return new ListIterator(this);  // initialized with
+  }                               //    this list
   // -------------------------------------------------------------
 }  // end class LinkList
 
