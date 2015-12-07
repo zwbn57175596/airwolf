@@ -22,12 +22,12 @@ class Link2
       }
    }  // end class Link2
 ////////////////////////////////////////////////////////////////
-class LinkList
+class LinkList2
    {
    private Link2 first;            // ref to first link on list
 
 // -------------------------------------------------------------
-   public LinkList()              // constructor
+   public LinkList2()              // constructor
       {
       first = null;               // no links on list yet
       }
@@ -85,13 +85,13 @@ class LinkList
       System.out.println("");
       }
 // -------------------------------------------------------------
-   }  // end class LinkList
+   }  // end class LinkList2
 ////////////////////////////////////////////////////////////////
 class LinkList2App
    {
    public static void main(String[] args)
       {
-      LinkList theList = new LinkList();  // make list
+      LinkList2 theList = new LinkList2();  // make list
 
       theList.insertFirst(22, 2.99);      // insert 4 items
       theList.insertFirst(44, 4.99);
