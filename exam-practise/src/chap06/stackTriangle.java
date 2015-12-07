@@ -18,13 +18,13 @@ class Params     // parameters to save on stack
 
 ////////////////////////////////////////////////////////////////
 @SuppressWarnings("ALL")
-class StackX {
+class StackParam {
   private int maxSize;         // size of StackX array
   private Params[] stackArray;
   private int top;             // top of stack
 
   //--------------------------------------------------------------
-  public StackX(int s)         // constructor
+  public StackParam(int s)         // constructor
   {
     maxSize = s;              // set array size
     stackArray = new Params[maxSize];  // create array
@@ -56,7 +56,7 @@ class StackX {
 class StackTriangleApp {
   static int theNumber;
   static int theAnswer;
-  static StackX theStack;
+  static StackParam theStack;
   static int codePart;
   static Params theseParams;
 
@@ -70,7 +70,7 @@ class StackTriangleApp {
 
   //-------------------------------------------------------------
   public static void recTriangle() {
-    theStack = new StackX(10000);
+    theStack = new StackParam(10000);
     codePart = 1;
     while (!step())  // call step() until it's true
     {
