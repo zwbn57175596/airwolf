@@ -10,6 +10,12 @@ class Link {
   public Link next;              // next link in list
 
   // -------------------------------------------------------------
+  public Link(double dd) // constructor for firstListList
+  {
+    dData = dd;
+  }
+
+  // -------------------------------------------------------------
   public Link(int id, double dd) // constructor
   {
     iData = id;                 // initialize data
