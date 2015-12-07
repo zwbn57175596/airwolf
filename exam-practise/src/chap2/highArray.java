@@ -4,6 +4,7 @@ package chap2;
 // demonstrates array class with high-level interface
 // to run this program: C>java HighArrayApp
 ////////////////////////////////////////////////////////////////
+@SuppressWarnings("ALL")
 class HighArray {
   private long[] a;                 // ref to array a
   private int nElems;               // number of data items
@@ -81,7 +82,7 @@ class HighArrayApp {
     arr.insert(22);
     arr.insert(88);
     arr.insert(11);
-    arr.insert(00);
+    arr.insert(0);
     arr.insert(66);
     arr.insert(33);
 
@@ -93,7 +94,7 @@ class HighArrayApp {
     else
       System.out.println("Can't find " + searchKey);
 
-    arr.delete(00);               // delete 3 items
+    arr.delete(0);               // delete 3 items
     arr.delete(55);
     arr.delete(99);
 

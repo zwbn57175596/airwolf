@@ -32,7 +32,7 @@ class LowArrayApp {
   public static void main(String[] args) {
     LowArray arr;                 // reference
     arr = new LowArray(100);      // create LowArray object
-    int nElems = 0;               // number of items in array
+    int nElems;               // number of items in array
     int j;                        // loop variable
 
     arr.setElem(0, 77);           // insert 10 items

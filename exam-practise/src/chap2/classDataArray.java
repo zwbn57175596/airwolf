@@ -31,6 +31,7 @@ class Person {
 }  // end class Person
 
 ////////////////////////////////////////////////////////////////
+@SuppressWarnings("ALL")
 class ClassDataArray {
   private Person[] a;               // reference to array
   private int nElems;               // number of data items

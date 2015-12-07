@@ -4,6 +4,7 @@ package chap2;
 // demonstrates Java arrays
 // to run this program: C>java arrayApp
 ////////////////////////////////////////////////////////////////
+@SuppressWarnings("ALL")
 class ArrayApp {
   public static void main(String[] args) {
     long[] arr;                  // reference to array
