@@ -65,7 +65,7 @@ class ArraySh {
 ////////////////////////////////////////////////////////////////
 class ShellSortApp {
   public static void main(String[] args) {
-    int maxSize = 10;             // array size
+    int maxSize = 3;             // array size
     ArraySh arr;
     arr = new ArraySh(maxSize);   // create the array
 
