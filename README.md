@@ -79,4 +79,29 @@ add exam-Practise
 ### 行内形式
 这时一个行内的链接，链到[Google](https://www.google.com.hk/) 
 
-### 
+### 参考形式
+先定义一个名称，之后可以在文件的其他地方定义内容
+
+I get 10 times more traffic from [Google][1] than from
+[Yahoo][2] or [MSN][3].
+
+[1]: http://google.com/ "Google"
+[2]: http://search.yahoo.com/ "Yahoo Search"
+[3]: http://search.msn.com/ "MSN Search"
+
+
+# 图片
+图片的语法和链接的很像，就是在前面加一个叹号
+
+### 行内形式
+![alt text](/path/to/img.jpg "Title")
+
+这里没有图片地址，先用一下别的学习资料上的。
+
+### 参考形式
+![alt text][4]
+
+这里是参考
+[4]: /path/to/img.jpg "Title"
+
+
