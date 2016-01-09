@@ -44,10 +44,10 @@ add exam-Practise
 # 列表
 ### 无序列表
 ##### 星号
-* Candy
-* Gum
-   如果在项目中插入空行，那么项目会被用<p>包起来
-* Boose
+* Candy 
+* Gum 
+   如果在项目中插入空行，那么项目会被用'<p>'包起来
+* Boose 
 
 ##### 加号
 + Candy
@@ -66,3 +66,8 @@ add exam-Practise
 3. Boose
 
 > 我个人觉得，这样要插入一个项目有点不方便啊。
+
+
+# 链接
+### 行内形式
+这时一个行内的链接，链到[Google](https://www.google.com.hk/) 
