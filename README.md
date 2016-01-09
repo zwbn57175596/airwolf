@@ -61,9 +61,13 @@ add exam-Practise
 
 ### 有序列表
 有序列表是用一个数字加一个点来做的 
+
 1. Candy
 2. Gum
 3. Boose
+6. Blue
+5. Green
+4. Red
 
 > 我个人觉得，这样要插入一个项目有点不方便啊。
 
