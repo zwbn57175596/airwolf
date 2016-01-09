@@ -1,11 +1,11 @@
 package chap02;
 
-// highArray.java
+// HighArray.java
 // demonstrates array class with high-level interface
 // to run this program: C>java HighArrayApp
 ////////////////////////////////////////////////////////////////
 @SuppressWarnings("ALL")
-class HighArray {
+public class HighArray {
   private long[] a;                 // ref to array a
   private int nElems;               // number of data items
 
