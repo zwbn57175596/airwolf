@@ -46,9 +46,22 @@ add exam-Practise
 ##### 星号
 * Candy
 * Gum
-* Boose
 
+   如果在项目中插入空行，那么项目会被用<p>包起来
+
+* Boose
 ##### 加号
 + Candy
 + Gum
 + Boose
+##### 和减号
+- Candy
+- Gum
+- Boose
+
+### 有序列表
+有序列表是用一个数字加一个点来做的
+1. Candy
+2. Gum
+3. Boose
+> 我个人觉得，这样要插入一个项目有点不方便啊。
