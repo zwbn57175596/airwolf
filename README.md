@@ -113,3 +113,9 @@ you've got to put paragraph tags in your blockquotes:
 <blockquote>
 <p>For example.</p>
 </blockquote>
+
+上面的代码直接呵呵了。。下面再来一发
+
+·<blockquote>
+<p>For example.</p>
+</blockquote>·
