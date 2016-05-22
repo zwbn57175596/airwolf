@@ -1,6 +1,12 @@
-################
-# MAVEN PROJECT
-###############
+#################
+## Intellij IDEA
+#################
+.idea/
+*.iml
+
+#################
+## MAVEN
+#################
 target/
 
 #################
@@ -12,6 +18,7 @@ target/
 .metadata
 bin/
 tmp/
+out/
 *.tmp
 *.bak
 *.swp
@@ -51,7 +58,7 @@ local.properties
 [Dd]ebug/
 [Rr]elease/
 x64/
-build/
+# build/
 [Bb]in/
 [Oo]bj/
 
@@ -198,7 +205,7 @@ $RECYCLE.BIN/
 *.egg
 *.egg-info
 dist/
-build/
+# build/
 eggs/
 parts/
 var/
