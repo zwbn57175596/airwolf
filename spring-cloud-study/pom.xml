@@ -32,6 +32,9 @@
   <modules>
     <module>eureka-server</module>
     <module>rest-api</module>
+    <module>rest-client</module>
+    <module>rest-api/src/main/java/edu/ndfz/study/spring/cloud/rest/api/controller</module>
+    <module>rest-core</module>
   </modules>
 
 </project>

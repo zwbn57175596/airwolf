@@ -1,4 +1,4 @@
-package edu.ndfz.study.spring.cloud.rest.api;
+package edu.ndfz.study.spring.cloud.rest.api.controller;
 
 import com.netflix.appinfo.EurekaInstanceConfig;
 import org.slf4j.Logger;
