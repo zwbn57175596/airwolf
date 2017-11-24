@@ -1,6 +1,6 @@
 package edu.ndfz.study.spring.cloud.rest.client.controller;
 
-import edu.ndfz.study.spring.cloud.rest.client.service.ProductService;
+import edu.ndfz.study.spring.cloud.rest.client.service.ProductServiceClient;
 import edu.ndfz.study.spring.cloud.rest.core.Product;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,15 +15,15 @@ import java.util.List;
 public class ProductController {
 
   @Resource
-  private ProductService productService;
+  private ProductServiceClient productServiceClient;
 
   @RequestMapping(method = RequestMethod.GET)
   public List<Product> list() {
-    return this.productService.findAll();
+    return this.productServiceClient.list();
   }
 
   @RequestMapping(value = "/{itemCode}", method = RequestMethod.GET)
   public Product detail(@PathVariable String itemCode) {
-    return this.productService.loadByItemCode(itemCode);
+    return this.productServiceClient.detail(itemCode);
   }
 }

@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-@EnableFeignClients
+@EnableFeignClients()
 @EnableDiscoveryClient
 @SpringBootApplication
 public class Application {

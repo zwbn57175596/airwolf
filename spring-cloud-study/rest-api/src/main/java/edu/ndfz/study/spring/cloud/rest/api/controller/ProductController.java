@@ -1,26 +1,26 @@
 package edu.ndfz.study.spring.cloud.rest.api.controller;
 
+import edu.ndfz.study.spring.cloud.rest.core.IProductService;
 import edu.ndfz.study.spring.cloud.rest.core.Product;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/products")
-public class ProductController {
+public class ProductController implements IProductService {
 
 //  private final Logger log = LoggerFactory.getLogger(ProductController.class);
 
-  @RequestMapping(method = RequestMethod.GET)
+  @Override
+//  @RequestMapping(method = RequestMethod.GET)
   public List<Product> list() {
     return this.buildProducts();
   }
 
-  @RequestMapping(value = "/{itemCode}", method = RequestMethod.GET)
+  @Override
+//  @RequestMapping(value = "/{itemCode}", method = RequestMethod.GET)
   public Product detail(@PathVariable String itemCode) {
     List<Product> products = this.buildProducts();
     for (Product product : products) {
