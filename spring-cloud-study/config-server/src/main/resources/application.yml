@@ -5,7 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: file:/Users/zhaoweih/GitHub/spring-config-repo
+          uri: file:/Users/zhaoweih/GitHub/airwolf
+          search-paths: config-repo
 logging:
   file: ./config-server.log
   level: info
@@ -14,3 +15,4 @@ server:
 management:
   security:
     enabled: false
+
