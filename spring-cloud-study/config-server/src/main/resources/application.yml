@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: file:/Users/zhaoweih/GitHub/airwolf
-          search-paths: spring-cloud-study/config-repo
+          uri: git@github.com:zwbn57175596/spring-study-config-repo.git
+          search-paths: src/main/resources
 logging:
   file: ./config-server.log
   level: info
