@@ -32,4 +32,9 @@ public class HelloWorld {
         eurekaInstanceConfig.getHostName(false));
     return "Hello, Spring Cloud! My port is " + String.valueOf(serverPort);
   }
+
+  @RequestMapping(value = "/hi", method = RequestMethod.GET)
+  public String hi() {
+    return foo.getFoo();
+  }
 }
