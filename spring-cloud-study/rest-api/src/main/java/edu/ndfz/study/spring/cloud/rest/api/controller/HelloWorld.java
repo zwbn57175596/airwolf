@@ -37,6 +37,7 @@ public class HelloWorld {
   public String hi() {
     try {
       Thread.sleep(10000);
+      log.info("execute hi zhaoweih");
     } catch (InterruptedException e) {
       log.error("", e);
     }
