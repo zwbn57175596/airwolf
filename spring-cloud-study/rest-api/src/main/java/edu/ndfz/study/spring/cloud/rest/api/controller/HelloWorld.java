@@ -36,8 +36,8 @@ public class HelloWorld {
   @RequestMapping(value = "/hi", method = RequestMethod.GET)
   public String hi() {
     try {
-      Thread.sleep(10000);
       log.info("execute hi zhaoweih");
+      Thread.sleep(10000);
     } catch (InterruptedException e) {
       log.error("", e);
     }
