@@ -39,7 +39,7 @@
     <module>rest-client</module>
     <module>rest-core</module>
     <module>config-server</module>
-    <module>config-repo</module>
+    <!--<module>config-repo</module>-->
   </modules>
 
 
