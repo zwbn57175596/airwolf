@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          basedir: spring-cloud-study/config-repo
-          uri: file:/Users/zhaoweih/GitHub/airwolf
+          uri: git@github.com:zwbn57175596/spring-study-config-repo.git
+          search-paths: src/main/resources
 logging:
   file: ./config-server.log
   level: info
@@ -15,6 +15,4 @@ server:
 management:
   security:
     enabled: false
-
-
 
